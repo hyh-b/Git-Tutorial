@@ -1,0 +1,21 @@
+테이블 명 	album_cmt
+
+글번호		seq			int			not null	
+본문번호		jseq			int			not null
+글쓴이		writer			varchar(20)		not null
+비밀번호		password		varchar(20)		not null
+내용		content			varchar(2000)		not null
+등록일		wdate			datetime		not null
+
+
+create table album_cmt(
+seq int not null primary key auto_increment,
+jseq int not null,
+writer varchar(12)  not null,
+password varchar(12)  not null,
+content varchar(2000),
+wdate datetime  not null
+);
+
+
+insert into album_cmt values(0,0,'글쓴이2','1234','내용2',now() );
